@@ -1,0 +1,102 @@
+.hero {
+  min-height: 100vh;
+  background-color: #37517e;
+  padding: 3rem 5rem;
+}
+
+.header {
+  display: grid;
+  grid-template-columns: 2fr 3fr;
+}
+.heroLeft {
+  font-size: 3rem;
+  font-weight: 500;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+}
+
+.heroNav {
+  display: flex;
+  justify-content: space-between;
+}
+
+.navList {
+  list-style: none;
+  display: flex;
+  align-items: center;
+  gap: 3rem;
+}
+
+.navLink {
+  color: #ffffff;
+  font-size: 1.6rem;
+  text-decoration: none;
+  white-space: nowrap;
+  transition: color 0.3s ease;
+}
+
+.navLink:hover {
+  color: #47b2e4;
+}
+.activeLink {
+  color: #47b2e4;
+}
+
+.ctaBtn {
+  background-color: #47b2e4;
+  color: #ffffff;
+  border-radius: 50px;
+  height: 3.5rem;
+  padding: 1rem 2rem;
+  border: none;
+  font-size: 1.4rem;
+  font-weight: 500;
+  display: flex;
+  align-items: center;
+  cursor: pointer;
+  transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+.ctaBtn:hover {
+  background-color: #3aa7d6;
+  transform: scale(1.05);
+}
+.heroContainer {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  column-gap: 5rem;
+}
+.heroText {
+  margin-top: 7rem;
+}
+.heroText h1 {
+  font-size: 4.5rem;
+  font-weight: 700;
+  line-height: 56px;
+  margin-bottom: 2rem;
+}
+.heroText p {
+  font-size: 2.2rem;
+  line-height: 1.3;
+  font-weight: 600;
+  color: #ffffff96;
+  margin-bottom: 2rem;
+}
+.heroText .ctaBtn {
+  padding: 2.2rem 3rem;
+  font-size: 1.6rem;
+}
+.heroImg {
+  margin-top: 3rem;
+  display: flex;
+  justify-content: center;
+
+  border-radius: 20px;
+  overflow: hidden;
+}
+.heroImg img {
+  height: 48rem;
+  width: auto;
+  border-radius: 20px;
+  box-shadow: 0px 10px 20px rgba(0, 0, 0, 0.3);
+}
