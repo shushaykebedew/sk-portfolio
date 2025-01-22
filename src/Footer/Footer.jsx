@@ -101,24 +101,27 @@ function Footer() {
           <p>If you want to connect with me, follow me on:</p>
           <ul className={styles.socialLinks}>
             <li>
-              <a href="https://facebook.com/shushay.kebedew">
+              <a href="https://facebook.com/shushay.kebedew" target="_blank">
                 {" "}
                 <FaFacebook className={styles.icon} />
               </a>
             </li>
             <li>
-              <a href="https://linkedin.com/shushay-kebedew">
+              <a
+                href="https://www.linkedin.com/in/shushay-kebedew/"
+                target="_blank"
+              >
                 {" "}
                 <FaLinkedin className={styles.icon} />
               </a>
             </li>
             <li>
-              <a href="https://x.com/shushaykebedew">
+              <a href="https://x.com/Shushay_Kebedew" target="_blank">
                 <FaTwitter className={styles.icon} />
               </a>
             </li>
             <li>
-              <a href="https://instagram.com/tigray_technology">
+              <a href="https://instagram.com/tigray_technology" target="_blank">
                 {" "}
                 <FaInstagram className={styles.icon} />
               </a>
@@ -129,9 +132,7 @@ function Footer() {
 
       {/* Copyright Section */}
       <div className={styles.copyright}>
-        <p>
-          &copy; Copyright <strong>Shushay</strong> All rights reserved!
-        </p>
+        <p>Copyright &copy; {new Date().getFullYear()} All rights reserved!</p>
       </div>
     </footer>
   );
