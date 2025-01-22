@@ -10,7 +10,7 @@ function Hero() {
   };
 
   return (
-    <div className={styles.hero}>
+    <section className={styles.hero}>
       <header className={styles.header}>
         <h2 className={styles.heroLeft}>Shushay Kebedew</h2>
         <nav className={styles.heroNav} aria-label="Main navigation">
@@ -68,7 +68,7 @@ function Hero() {
           <img src={heroImg} alt="Developer at work" />
         </div>
       </main>
-    </div>
+    </section>
   );
 }
 

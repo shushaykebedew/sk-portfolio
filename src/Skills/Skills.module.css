@@ -1,0 +1,80 @@
+.skills {
+  padding: 5rem;
+  text-align: center;
+  min-height: 100vh;
+  /* width: 75%; */
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.heading {
+  font-size: 2.8rem;
+  font-weight: 600;
+  color: #37517e;
+  margin-bottom: 4rem;
+  position: relative;
+}
+
+.heading::after {
+  content: "";
+  display: block;
+  width: 8rem;
+  height: 4px;
+  background-color: #47b2e4;
+  margin: 0.2rem auto 0;
+  border-radius: 5px;
+}
+
+.skillContainer {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 2rem;
+  margin-top: 2rem;
+}
+
+.skill {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-width: 25rem;
+  gap: 1rem;
+  padding: 4rem 2rem;
+  border-radius: 15px;
+  background-color: #fff;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  transition: all 0.3s ease;
+}
+
+.skill:hover {
+  transform: translateY(-10px);
+  box-shadow: 0 6px 20px rgba(0, 0, 0, 0.2);
+}
+
+.icon {
+  font-size: 3rem;
+  color: #47b2e4;
+}
+
+.skill p {
+  font-size: 1.6rem;
+  font-weight: 500;
+  color: #37517e;
+  margin: 0;
+}
+
+@media (max-width: 768px) {
+  .skillContainer {
+    grid-template-columns: repeat(
+      2,
+      1fr
+    ); /* 2 skills per row on medium screens */
+  }
+}
+
+@media (max-width: 480px) {
+  .skillContainer {
+    grid-template-columns: 1fr; /* 1 skill per row on small screens */
+  }
+}

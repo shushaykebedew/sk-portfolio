@@ -1,0 +1,146 @@
+.footer {
+  padding: 4rem;
+  background-color: #f4f4f9;
+  color: #555;
+  text-align: center;
+}
+
+.footerInfo {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  margin-bottom: 4rem;
+}
+
+.personalInfo {
+  font-size: 1.6rem;
+  text-align: left;
+  margin-bottom: 2rem;
+  padding-left: 5rem;
+  line-height: 1.8;
+}
+
+.personalInfo h2 {
+  font-size: 2.4rem;
+  font-weight: bold;
+  margin-bottom: 2rem;
+}
+
+h2,
+h4 {
+  color: #37517e;
+}
+
+ul {
+  list-style: none;
+  padding: 0;
+}
+
+ul li {
+  margin-bottom: 1rem;
+}
+.forwardIcon {
+  font-size: 1.4rem;
+  color: #47b2e4;
+}
+ul.socialLinks {
+  display: flex;
+  gap: 1.5rem; /* Adjust spacing for better alignment */
+  justify-content: flex-start;
+  align-items: center;
+  margin-top: 1rem;
+  padding-left: 1rem;
+}
+
+ul.socialLinks li {
+  transition: transform 0.3s ease;
+  border: 1px solid #555;
+  width: 3.5rem;
+  height: 3.5rem;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+ul.socialLinks li:hover {
+  border: 1px solid #47b2e4;
+}
+
+.icon {
+  color: #555;
+  transition: color 0.3s ease, transform 0.3s ease;
+  font-size: 1.8rem;
+}
+
+.icon:hover {
+  color: #47b2e4;
+}
+
+.copyright {
+  margin-top: 2rem;
+  font-size: 1.4rem;
+  color: #555;
+}
+.linksSection {
+  text-align: left;
+  font-size: 1.5rem;
+}
+.linksSection h4 {
+  margin-bottom: 2rem;
+  font-size: 2rem;
+}
+
+.linksSection p {
+  padding-left: 1rem;
+}
+.linksSection a {
+  text-decoration: none;
+  color: #555;
+}
+.linksSection a:hover {
+  color: #47b2e4;
+}
+.servicesSection {
+  text-align: left;
+  font-size: 1.5rem;
+}
+.servicesSection h4 {
+  margin-bottom: 2rem;
+  font-size: 2rem;
+}
+.servicesSection a {
+  text-decoration: none;
+  color: #555;
+}
+.socialMediaSection {
+  text-align: left;
+  font-size: 1.5rem;
+}
+.socialMediaSection h4 {
+  margin-bottom: 2rem;
+  font-size: 2rem;
+}
+
+@media (max-width: 768px) {
+  .footerInfo {
+    flex-direction: column;
+    text-align: center; /* Center text on smaller screens */
+  }
+  .personalInfo {
+    flex: 1 1 100%;
+    margin: 1rem 0;
+  }
+}
+
+@media (max-width: 480px) {
+  .footer {
+    padding: 2rem;
+  }
+  .socialLinks {
+    gap: 1rem; /* Reduce gap between icons on very small screens */
+  }
+  .icon {
+    font-size: 2rem; /* Reduce icon size on smaller screens */
+  }
+}
