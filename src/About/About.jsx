@@ -1,11 +1,6 @@
 import styles from "./About.module.css";
-import profileImg from "../assets/me.jpg";
-import {
-  FaLaptopCode,
-  FaProjectDiagram,
-  FaHiking,
-  FaBook,
-} from "react-icons/fa";
+import profileImg from "../assets/hero-img.png";
+import { FaCheckCircle } from "react-icons/fa";
 
 function About() {
   return (
@@ -30,20 +25,20 @@ function About() {
           </p>
           <ul className={styles.list}>
             <li>
-              <FaLaptopCode className={styles.icon} /> I specialize in building
+              <FaCheckCircle className={styles.icon} /> I specialize in building
               efficient and scalable web applications.
             </li>
             <li>
-              <FaProjectDiagram className={styles.icon} /> I love collaborating
-              on challenging projects that push my creativity.
+              <FaCheckCircle className={styles.icon} /> I love collaborating on
+              challenging projects that push my creativity.
             </li>
             <li>
-              <FaBook className={styles.icon} /> I enjoy reading books on a
-              variety of topics to expand my knowledge and creativity.
+              <FaCheckCircle className={styles.icon} /> I enjoy reading books on
+              a variety of topics to expand my knowledge and creativity.
             </li>
             <li>
-              <FaHiking className={styles.icon} /> Exploring nature and hiking
-              fuel my energy and inspiration.
+              <FaCheckCircle className={styles.icon} /> Exploring nature and
+              hiking fuel my energy and inspiration.
             </li>
           </ul>
           <p>

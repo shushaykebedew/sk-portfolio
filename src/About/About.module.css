@@ -18,7 +18,7 @@
 .heading::after {
   content: "";
   display: block;
-  width: 8rem;
+  width: 9rem;
   height: 4px;
   background-color: #47b2e4;
   margin: 0.2rem auto 0;
@@ -29,9 +29,8 @@
   display: grid;
   grid-template-columns: 1fr 1.5fr;
   gap: 3rem;
-  align-items: center;
-  box-shadow: 0 10px 10px rgba(0, 0, 0, 0.1);
-  padding: 3rem;
+  box-shadow: 0 3px 10px rgba(0, 0, 0, 0.1);
+  padding: 5rem 3rem;
 }
 
 .image {
@@ -40,8 +39,8 @@
 }
 
 .profileImg {
-  width: 50%;
-  max-width: 40rem;
+  width: 25rem;
+  height: 25rem;
   border-radius: 50%;
   box-shadow: 0 10px 15px rgba(0, 0, 0, 0.2);
 }
@@ -66,9 +65,10 @@
 }
 
 .icon {
-  font-size: 2rem;
+  font-size: 1.6rem;
   color: #47b2e4;
   margin-right: 1rem;
+  margin-top: 0.5rem;
 }
 
 .cta {

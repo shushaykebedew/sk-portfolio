@@ -18,7 +18,7 @@
 .heading::after {
   content: "";
   display: block;
-  width: 12rem;
+  width: 13rem;
   height: 4px;
   background-color: #47b2e4;
   margin: 0.2rem auto 0;
@@ -38,6 +38,7 @@
   border-radius: 10px;
   box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
   transition: transform 0.3s ease, box-shadow 0.3s ease;
+  text-align: left;
 }
 
 .service:hover {
@@ -46,9 +47,10 @@
 }
 
 .icon {
-  font-size: 3rem;
+  font-size: 2.4rem;
   color: #47b2e4;
   margin-bottom: 1rem;
+  margin-left: 7rem;
 }
 
 .service h3 {

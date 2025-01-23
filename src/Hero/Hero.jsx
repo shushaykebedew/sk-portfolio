@@ -22,7 +22,7 @@ function Hero() {
   return (
     <section className={styles.hero}>
       <header className={styles.header}>
-        <h2 className={styles.heroLeft}>Shushay Kebedew</h2>
+        <h2 className={styles.fullName}>Shushay Kebedew</h2>
         <nav className={styles.heroNav} aria-label="Main navigation">
           <ul className={styles.navList}>
             {navLinks.map((item) => (
@@ -46,11 +46,12 @@ function Hero() {
         <div className={styles.heroText}>
           <h1>Full Stack Developer</h1>
           <p>
-            Hi, I'm Shushay, a passionate Full Stack Developer with experience
-            in creating scalable, efficient, and user-friendly web applications.
+            Hi, I'm <span className={styles.myName}> Shushay</span>, a
+            passionate Full Stack Developer with experience in creating
+            scalable, efficient, and user-friendly web applications.
           </p>
           <button className={styles.ctaBtn}>
-            <a href="#contact">Get Started</a>
+            <a href="#contact">Get in touch</a>
           </button>
         </div>
         <div className={styles.heroImg}>
