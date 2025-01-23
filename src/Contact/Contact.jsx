@@ -55,7 +55,7 @@ function Contact() {
           <div className={styles.contactInfo}>
             <FaPhoneAlt className={styles.icon} />
             <div>
-              <p className={styles.label}>Call me</p>
+              <p className={styles.label}>Call</p>
               <p>+251 943 668 796</p>
             </div>
           </div>
@@ -63,7 +63,7 @@ function Contact() {
           <div className={styles.contactInfo}>
             <FaEnvelope className={styles.icon} />
             <div>
-              <p className={styles.label}>Email me</p>
+              <p className={styles.label}>Email</p>
               <p>shusaykebedew12@gmail.com</p>
             </div>
           </div>

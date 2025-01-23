@@ -22,6 +22,7 @@
   margin: 0.2rem auto 0;
   border-radius: 5px;
 }
+
 .contactContainer {
   display: flex;
   justify-content: space-between;
@@ -37,33 +38,42 @@
 
 .contactInfo {
   display: flex;
-  align-items: center;
+  align-items: flex-start;
   gap: 1rem;
   margin-bottom: 2rem;
-  color: #555;
   text-align: left;
+  color: #555;
 }
+
 .contactInfo p {
   font-size: 1.6rem;
+  word-wrap: break-word;
+  white-space: normal;
 }
+
 .icon {
   font-size: 2rem;
   color: #47b2e4;
-  background-color: #b2dcf060;
-  width: 5rem;
-  height: 5rem;
+  background-color: #eaf7ff;
+  width: 4rem;
+  height: 4rem;
   display: flex;
   justify-content: center;
   align-items: center;
   border-radius: 50%;
   transition: all 0.3s ease-in-out;
-  padding: 1.3rem;
-  margin-right: 2rem;
+  padding: 1rem;
+  margin-right: 1rem;
+  flex-shrink: 0;
 }
-
 .icon:hover {
   background-color: #47b2e4;
   color: white;
+}
+.contactInfo div {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
 }
 
 .label {
@@ -131,15 +141,64 @@ button:hover {
   background-color: #47b2e4a4;
 }
 
-@media (max-width: 768px) {
+/*---Resposive design----*/
+@media (max-width: 1080px) {
+  .contact {
+    padding: 3rem 8rem;
+  }
   .contactContainer {
-    flex-direction: column; /* Stack info and form vertically on smaller screens */
+    flex-direction: column;
     gap: 2rem;
+  }
+
+  .contactInfo {
+    align-items: flex-start;
+  }
+
+  .icon {
+    width: 4rem;
+    height: 4rem;
+    font-size: 2rem;
+  }
+
+  .contactInfo p {
+    font-size: 1.6rem;
+  }
+}
+
+@media (max-width: 700px) {
+  .contactContainer {
+    gap: 2rem;
+    padding: 1rem;
+  }
+
+  .contactInfo p {
+    font-size: 1.5rem;
+  }
+
+  .icon {
+    width: 4rem;
+    height: 4rem;
+    font-size: 2rem;
   }
 }
 
 @media (max-width: 480px) {
+  .contactInfo {
+    gap: 0.8rem;
+  }
+
   .contact {
-    padding: 2rem;
+    padding: 2rem 1rem;
+  }
+
+  .icon {
+    width: 3rem;
+    height: 3rem;
+    font-size: 1.8rem;
+  }
+
+  .contactInfo p {
+    font-size: 1.3rem;
   }
 }

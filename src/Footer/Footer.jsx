@@ -98,7 +98,7 @@ function Footer() {
         {/* Social Media Links */}
         <div className={styles.socialMediaSection}>
           <h4>Follow Me</h4>
-          <p>If you want to connect with me, follow me on:</p>
+          <p>If you want to connect with me, follow me </p>
           <ul className={styles.socialLinks}>
             <li>
               <a href="https://facebook.com/shushay.kebedew" target="_blank">

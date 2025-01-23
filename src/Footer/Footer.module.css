@@ -1,5 +1,5 @@
 .footer {
-  padding: 4rem 6rem 4rem 4rem;
+  padding: 4rem;
   background-color: #f4f4f9;
   color: #555;
   text-align: center;
@@ -7,17 +7,18 @@
 
 .footerInfo {
   display: flex;
-  flex-wrap: wrap;
+  flex-wrap: nowrap;
   justify-content: space-between;
+  align-items: flex-start;
   margin-bottom: 4rem;
 }
 
 .personalInfo {
-  font-size: 1.6rem;
+  font-size: 1.5rem;
   text-align: left;
   margin-bottom: 2rem;
-  padding-left: 5rem;
   line-height: 1.8;
+  flex: 1 1 30%;
 }
 
 .personalInfo h2 {
@@ -39,14 +40,16 @@ ul {
 ul li {
   margin-bottom: 1rem;
 }
+
 .forwardIcon {
   font-size: 1.4rem;
   color: #47b2e4;
 }
+
 ul.socialLinks {
   display: flex;
-  gap: 1.5rem; /* Adjust spacing for better alignment */
-  justify-content: flex-start;
+  gap: 1.5rem;
+  justify-content: center;
   align-items: center;
   margin-top: 1rem;
   padding-left: 1rem;
@@ -82,68 +85,121 @@ ul.socialLinks li:hover {
   font-size: 1.4rem;
   color: #555;
 }
-.linksSection {
-  text-align: left;
+
+.linksSection,
+.servicesSection,
+.socialMediaSection {
   font-size: 1.5rem;
-}
-.linksSection h4 {
-  margin-bottom: 2rem;
-  font-size: 2rem;
+  flex: 1 1 30%;
+  text-align: left;
 }
 
-.linksSection p {
-  padding-left: 1rem;
-}
-.linksSection a {
-  text-decoration: none;
-  color: #555;
-}
-.linksSection a:hover {
-  color: #47b2e4;
-}
-.servicesSection {
-  text-align: left;
-  font-size: 1.5rem;
-}
-.servicesSection h4 {
-  margin-bottom: 2rem;
-  font-size: 2rem;
-}
-.servicesSection a {
-  text-decoration: none;
-  color: #555;
-}
-.servicesSection a:hover {
-  color: #47b2e4;
-}
-.socialMediaSection {
-  text-align: left;
-  font-size: 1.5rem;
-}
+.linksSection h4,
+.servicesSection h4,
 .socialMediaSection h4 {
   margin-bottom: 2rem;
   font-size: 2rem;
 }
 
-@media (max-width: 768px) {
+.linksSection a,
+.servicesSection a {
+  text-decoration: none;
+  color: #555;
+}
+
+.linksSection a:hover,
+.servicesSection a:hover {
+  color: #47b2e4;
+}
+
+.linksSection p,
+.servicesSection p {
+  padding-left: 1rem;
+}
+
+@media (max-width: 1024px) {
   .footerInfo {
     flex-direction: column;
-    text-align: center; /* Center text on smaller screens */
+    text-align: center;
+    gap: 2rem;
   }
+
+  .personalInfo,
+  .linksSection,
+  .servicesSection,
+  .socialMediaSection {
+    flex: 1 1 100%;
+    padding-left: 0;
+  }
+
+  .socialLinks {
+    justify-content: center;
+  }
+
+  .icon {
+    font-size: 2rem;
+  }
+}
+
+@media (max-width: 768px) {
+  .footer {
+    padding: 2rem 3rem;
+  }
+
+  .footerInfo {
+    flex-direction: column;
+  }
+
   .personalInfo {
     flex: 1 1 100%;
     margin: 1rem 0;
+    padding-left: 0;
+  }
+
+  .linksSection,
+  .servicesSection,
+  .socialMediaSection {
+    flex: 1 1 100%;
+  }
+
+  .socialLinks {
+    gap: 1rem;
+  }
+
+  .icon {
+    font-size: 2rem;
   }
 }
 
 @media (max-width: 480px) {
   .footer {
-    padding: 2rem;
+    padding: 2rem 3rem;
   }
+
+  .personalInfo {
+    padding-left: 0;
+  }
+
+  .footerInfo {
+    flex-direction: column;
+    gap: 2rem;
+  }
+
+  .linksSection,
+  .servicesSection,
+  .socialMediaSection {
+    flex: 1 1 100%;
+  }
+
   .socialLinks {
-    gap: 1rem; /* Reduce gap between icons on very small screens */
+    gap: 1rem;
   }
+
   .icon {
-    font-size: 2rem; /* Reduce icon size on smaller screens */
+    font-size: 2.2rem;
+  }
+
+  .copyright {
+    font-size: 1.2rem;
   }
 }

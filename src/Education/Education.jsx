@@ -8,13 +8,14 @@ function Education() {
       institution: "University of Mekelle",
       year: "2018 - Present",
       description:
-        "Focused on full-stack development, data structures, and algorithms.",
+        "Focused on full-stack development, networking, data structures, algorithms, and other IT-related fields.",
     },
     {
       degree: "High School Diploma",
       institution: "Aba-Hailemariam High School",
       year: "2014 - 2018",
-      description: "Specialized in computer science and mathematics.",
+      description:
+        "Studied a comprehensive curriculum covering all science courses.",
     },
   ];
 
@@ -35,6 +36,7 @@ function Education() {
               <label>Year : </label>
               {education.year}
             </p>
+            <p className={styles.description}>{education.description}</p>
           </div>
         ))}
       </div>

@@ -12,7 +12,7 @@ function Projects() {
       image: qrCodeScan,
     },
     {
-      title: "Sheqlee Web App Admin",
+      title: "Sheqlee's Admin Page",
       description:
         "An admin dashboard for the Sheqlee web app, designed to help freelancers and clients manage their profiles, projects, and payments. The intuitive UI ensures seamless navigation while providing powerful features for productivity and project management.",
       link: "#",
