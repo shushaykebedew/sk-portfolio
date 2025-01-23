@@ -4,6 +4,7 @@ import heroImg from "../assets/hero-img.png";
 
 function Hero() {
   const [activeLink, setActiveLink] = useState("Home");
+  const [isMenuOpen, setIsMenuOpen] = useState(false); // State for mobile menu toggle
 
   const navLinks = [
     "Home",
@@ -17,13 +18,28 @@ function Hero() {
 
   const handleLinkClick = (link) => {
     setActiveLink(link);
+    setIsMenuOpen(false); // Close menu when a link is clicked
   };
 
   return (
     <section className={styles.hero}>
       <header className={styles.header}>
         <h2 className={styles.fullName}>Shushay Kebedew</h2>
-        <nav className={styles.heroNav} aria-label="Main navigation">
+
+        {/* Hamburger Icon */}
+        <button
+          className={styles.menuToggle}
+          onClick={() => setIsMenuOpen(!isMenuOpen)}
+          aria-label="Toggle navigation menu"
+        >
+          &#9776;
+        </button>
+
+        {/* Navigation Menu */}
+        <nav
+          className={`${styles.heroNav} ${isMenuOpen ? styles.navOpen : ""}`}
+          aria-label="Main navigation"
+        >
           <ul className={styles.navList}>
             {navLinks.map((item) => (
               <li key={item}>
@@ -42,13 +58,14 @@ function Hero() {
           </ul>
         </nav>
       </header>
+
       <main className={styles.heroContainer}>
         <div className={styles.heroText}>
           <h1>Full Stack Developer</h1>
           <p>
-            Hi, I'm <span className={styles.myName}> Shushay</span>, a
-            passionate Full Stack Developer with experience in creating
-            scalable, efficient, and user-friendly web applications.
+            Hi, I'm <span className={styles.myName}>Shushay</span>, a passionate
+            Full Stack Developer with experience in creating scalable,
+            efficient, and user-friendly web applications.
           </p>
           <button className={styles.ctaBtn}>
             <a href="#contact">Get in touch</a>
