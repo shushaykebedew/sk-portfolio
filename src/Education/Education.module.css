@@ -88,6 +88,12 @@
   .educationList {
     gap: 2rem;
   }
+  .heading {
+    font-size: 2.4rem;
+  }
+  .heading::after {
+    width: 12rem;
+  }
 }
 
 @media (max-width: 768px) {
@@ -95,7 +101,12 @@
     grid-template-columns: 1fr;
     gap: 2rem;
   }
-
+  .heading {
+    font-size: 2.2rem;
+  }
+  .heading::after {
+    width: 10rem;
+  }
   .educationItem {
     padding: 2rem;
   }
@@ -117,8 +128,11 @@
   }
 
   .heading {
-    font-size: 2.4rem; /* Adjust heading size */
+    font-size: 2rem; /* Adjust heading size */
     margin-bottom: 3rem;
+  }
+  .heading::after {
+    width: 9rem;
   }
 
   .educationItem {

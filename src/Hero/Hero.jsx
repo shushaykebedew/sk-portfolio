@@ -4,7 +4,7 @@ import heroImg from "../assets/hero-img.png";
 
 function Hero() {
   const [activeLink, setActiveLink] = useState("Home");
-  const [isMenuOpen, setIsMenuOpen] = useState(false); // State for mobile menu toggle
+  const [isMenuOpen, setIsMenuOpen] = useState(false);
 
   const navLinks = [
     "Home",
@@ -18,7 +18,7 @@ function Hero() {
 
   const handleLinkClick = (link) => {
     setActiveLink(link);
-    setIsMenuOpen(false); // Close menu when a link is clicked
+    setIsMenuOpen(false);
   };
 
   return (
