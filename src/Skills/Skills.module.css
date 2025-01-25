@@ -1,7 +1,7 @@
 .skills {
-  padding: 5rem 8rem;
+  padding: 6rem 8rem;
   text-align: center;
-  min-height: 100vh;
+  /* min-height: 100vh; */
   margin: 0 auto;
   display: flex;
   flex-direction: column;
@@ -79,7 +79,7 @@
 }
 @media (max-width: 768px) {
   .skills {
-    padding: 4rem 4rem;
+    padding: 4rem;
   }
 
   .skillContainer {

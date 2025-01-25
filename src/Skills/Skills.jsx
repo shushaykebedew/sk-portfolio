@@ -9,9 +9,9 @@ function Skills() {
     { name: "React" },
     { name: "Node.js" },
     { name: "MongoDB" },
-    { name: "Git" },
-    { name: "Python" },
     { name: "MySQL" },
+    { name: "Python" },
+    { name: "Git" },
   ];
 
   return (

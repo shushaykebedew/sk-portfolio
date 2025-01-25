@@ -1,8 +1,8 @@
 .projects {
-  padding: 4rem 10rem;
+  padding: 6rem 10rem;
   background-color: #f4f4f9;
   text-align: center;
-  min-height: 100vh;
+  /* min-height: 100vh; */
 }
 
 .heading {

@@ -114,6 +114,34 @@ ul.socialLinks a:hover .icon {
   padding-left: 1rem;
 }
 
+.scrollToTop {
+  position: fixed;
+  bottom: 2rem;
+  right: 2rem;
+  background-color: #47b2e4;
+  color: #ffffff;
+  border: none;
+  border-radius: 50%;
+  width: 5rem;
+  height: 5rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  cursor: pointer;
+  transition: background-color 0.3s ease, transform 0.3s ease;
+  z-index: 1000;
+}
+
+.scrollToTop:hover {
+  background-color: #3aa7d6;
+  transform: scale(1.02);
+}
+
+.scrollToTop:active {
+  background-color: #2f8ab3;
+}
+
 @media (max-width: 1024px) {
   .footerInfo {
     flex-direction: column;

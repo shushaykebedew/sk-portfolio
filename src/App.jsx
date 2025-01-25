@@ -7,8 +7,14 @@ import Hero from "./Hero/Hero";
 import Projects from "./Projects/Projects";
 import Services from "./Services/Services";
 import Skills from "./Skills/Skills";
+import { useEffect } from "react";
 
 function App() {
+  useEffect(() => {
+    window.history.pushState({}, "", "/");
+    window.scrollTo(0, 0);
+  }, []);
+
   return (
     <div className={styles.app}>
       <Hero />

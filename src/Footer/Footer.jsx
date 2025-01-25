@@ -1,7 +1,29 @@
 import styles from "./Footer.module.css";
 import { FaFacebook, FaLinkedin, FaTwitter, FaInstagram } from "react-icons/fa";
 import { IoChevronForward } from "react-icons/io5";
+import { FaArrowUp } from "react-icons/fa"; // Icon for the scroll-to-top button
+import { useEffect, useState } from "react";
+
 function Footer() {
+  const [showScrollToTop, setShowScrollToTop] = useState(false);
+
+  // Show the scroll-to-top button when the user scrolls down
+  useEffect(() => {
+    const handleScroll = () => {
+      setShowScrollToTop(window.scrollY > 630);
+    };
+
+    window.addEventListener("scroll", handleScroll);
+    return () => window.removeEventListener("scroll", handleScroll);
+  }, []);
+
+  const scrollToTop = () => {
+    window.scrollTo({
+      top: 0,
+      behavior: "smooth",
+    });
+  };
+
   return (
     <footer className={styles.footer}>
       <div className={styles.footerInfo}>
@@ -102,7 +124,6 @@ function Footer() {
           <ul className={styles.socialLinks}>
             <li>
               <a href="https://facebook.com/shushay.kebedew" target="_blank">
-                {" "}
                 <FaFacebook className={styles.icon} />
               </a>
             </li>
@@ -111,7 +132,6 @@ function Footer() {
                 href="https://www.linkedin.com/in/shushay-kebedew/"
                 target="_blank"
               >
-                {" "}
                 <FaLinkedin className={styles.icon} />
               </a>
             </li>
@@ -122,13 +142,23 @@ function Footer() {
             </li>
             <li>
               <a href="https://instagram.com/tigray_technology" target="_blank">
-                {" "}
                 <FaInstagram className={styles.icon} />
               </a>
             </li>
           </ul>
         </div>
       </div>
+
+      {/* Scroll-to-Top Button */}
+      {showScrollToTop && (
+        <button
+          className={styles.scrollToTop}
+          onClick={scrollToTop}
+          aria-label="Scroll to top"
+        >
+          <FaArrowUp className={styles.scrollIcon} />
+        </button>
+      )}
 
       {/* Copyright Section */}
       <div className={styles.copyright}>
