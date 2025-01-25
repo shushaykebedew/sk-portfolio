@@ -73,6 +73,7 @@
 }
 
 .projectLink {
+  display: none;
   color: #47b2e4;
   font-size: 1.5rem;
   text-decoration: none;

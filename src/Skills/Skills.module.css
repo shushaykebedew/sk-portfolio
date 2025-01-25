@@ -39,8 +39,6 @@
 .skill {
   display: flex;
   align-items: center;
-  /* justify-content: center; */
-
   gap: 1rem;
   padding: 4rem 2rem;
   padding-left: 35%;
@@ -75,6 +73,9 @@
   .skills {
     padding: 3rem 5rem;
   }
+  .skill {
+    padding: 3rem 2rem;
+  }
 }
 @media (max-width: 768px) {
   .skills {
@@ -87,7 +88,7 @@
   }
 
   .skill {
-    padding: 3.5rem 2rem;
+    padding: 2.5rem 2rem;
     padding-left: 30%;
   }
 
@@ -103,14 +104,15 @@
 /* Small Screens (480px and below) */
 @media (max-width: 480px) {
   .skillContainer {
-    grid-template-columns: 1fr;
-    gap: 1rem;
+    padding: 0;
+    gap: 2rem;
   }
 
   .skill {
-    padding: 1.5rem;
+    padding: 2rem 1.5rem;
     justify-content: unset;
-    padding-left: 40%;
+    padding-left: 20%;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
   }
   .skill:hover {
     transform: translateY(-3px);
