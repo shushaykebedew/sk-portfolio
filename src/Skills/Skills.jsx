@@ -3,15 +3,15 @@ import styles from "./Skills.module.css";
 
 function Skills() {
   const skillSet = [
-    { name: "HTML", icon: <FaCheckCircle /> },
-    { name: "CSS", icon: <FaCheckCircle /> },
-    { name: "JavaScript", icon: <FaCheckCircle /> },
-    { name: "React", icon: <FaCheckCircle /> },
-    { name: "Node.js", icon: <FaCheckCircle /> },
-    { name: "MongoDB", icon: <FaCheckCircle /> },
-    { name: "Git", icon: <FaCheckCircle /> },
-    { name: "Python", icon: <FaCheckCircle /> },
-    { name: "MySQL", icon: <FaCheckCircle /> },
+    { name: "HTML" },
+    { name: "CSS" },
+    { name: "JavaScript" },
+    { name: "React" },
+    { name: "Node.js" },
+    { name: "MongoDB" },
+    { name: "Git" },
+    { name: "Python" },
+    { name: "MySQL" },
   ];
 
   return (
@@ -20,7 +20,9 @@ function Skills() {
       <div className={styles.skillContainer}>
         {skillSet.map((skill, index) => (
           <div key={index} className={styles.skill}>
-            <span className={styles.icon}>{skill.icon}</span>
+            <span className={styles.icon}>
+              <FaCheckCircle />
+            </span>
             <p>{skill.name}</p>
           </div>
         ))}

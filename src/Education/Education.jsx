@@ -5,7 +5,7 @@ function Education() {
   const educationList = [
     {
       degree: "Bachelor's in Information Technology",
-      institution: "University of Mekelle",
+      institution: "University of Mekelle/MIT",
       year: "2018 - Present",
       description:
         "Focused on full-stack development, networking, data structures, algorithms, and other IT-related fields.",
@@ -15,7 +15,7 @@ function Education() {
       institution: "Aba-Hailemariam High School",
       year: "2014 - 2018",
       description:
-        "Studied a comprehensive curriculum covering all science courses.",
+        "Studied a comprehensive curriculum covering both social and natural sciences.",
     },
   ];
 

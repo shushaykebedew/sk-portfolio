@@ -19,7 +19,7 @@
 .heading::after {
   content: "";
   display: block;
-  width: 11rem;
+  width: 75%;
   height: 4px;
   background-color: #47b2e4;
   margin: 0.2rem auto 0;
@@ -100,9 +100,7 @@
   .heading {
     font-size: 2.4rem;
   }
-  .heading::after {
-    width: 9rem;
-  }
+
   .content {
     grid-template-columns: 1fr;
     padding: 4rem 2rem;
@@ -132,9 +130,7 @@
   .heading {
     font-size: 2.2rem;
   }
-  .heading::after {
-    width: 8rem;
-  }
+
   .content {
     padding: 3rem 1.5rem;
   }
@@ -168,9 +164,7 @@
     font-size: 2rem;
     margin-bottom: 3rem;
   }
-  .heading::after {
-    width: 7rem;
-  }
+
   .content {
     padding: 2rem;
     /* box-shadow: none; */
