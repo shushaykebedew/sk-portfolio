@@ -13,12 +13,13 @@
   text-align: center;
   position: relative;
   text-transform: uppercase;
+  display: inline-block;
 }
 
 .heading::after {
   content: "";
   display: block;
-  width: 16rem;
+  width: 75%;
   height: 4px;
   background-color: #47b2e4;
   margin: 0.2rem auto 0;

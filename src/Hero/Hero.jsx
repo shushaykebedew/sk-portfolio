@@ -1,5 +1,6 @@
 import React, { useState } from "react";
 import styles from "./Hero.module.css";
+import { FaDownload } from "react-icons/fa"; // Import the download icon
 import heroImg from "../assets/hero-img.png";
 
 function Hero() {
@@ -68,7 +69,9 @@ function Hero() {
             efficient, and user-friendly web applications.
           </p>
           <button className={styles.ctaBtn}>
-            <a href="#contact">Get in touch</a>
+            <a href="/Shushay-Kebedew-CV.pdf" download="Shushay_Kebedew_CV">
+              Download CV <FaDownload className={styles.downloadIcon} />
+            </a>
           </button>
         </div>
         <div className={styles.heroImg}>

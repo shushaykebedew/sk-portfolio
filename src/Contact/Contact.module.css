@@ -12,11 +12,13 @@
   text-align: center;
   position: relative;
   text-transform: uppercase;
+  display: inline-block;
 }
+
 .heading::after {
   content: "";
   display: block;
-  width: 15rem;
+  width: 80%;
   height: 4px;
   background-color: #47b2e4;
   margin: 0.2rem auto 0;
@@ -73,7 +75,6 @@
 .contactInfo div {
   display: flex;
   flex-direction: column;
-  gap: 0.5rem;
 }
 
 .label {
@@ -142,11 +143,13 @@ button:hover {
 }
 .map {
   padding-left: 6rem;
+  padding-right: 2rem;
 }
 .map iframe {
   width: 100%;
   height: 200px;
   border: 1px solid #ddd;
+  border-radius: 5px;
 }
 
 .feedback {
@@ -245,6 +248,6 @@ button:hover {
     font-size: 2rem;
   }
   .heading::after {
-    width: 10rem;
+    width: 80%;
   }
 }

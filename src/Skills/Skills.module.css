@@ -21,7 +21,7 @@
 .heading::after {
   content: "";
   display: block;
-  width: 11rem;
+  width: 75%;
   height: 4px;
   background-color: #47b2e4;
   margin: 0.2rem auto 0;
@@ -39,9 +39,11 @@
 .skill {
   display: flex;
   align-items: center;
-  justify-content: center;
+  /* justify-content: center; */
+
   gap: 1rem;
   padding: 4rem 2rem;
+  padding-left: 35%;
   border-radius: 15px;
   background-color: #fff;
   box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
@@ -86,6 +88,7 @@
 
   .skill {
     padding: 3.5rem 2rem;
+    padding-left: 30%;
   }
 
   .icon {
@@ -99,10 +102,6 @@
 
 /* Small Screens (480px and below) */
 @media (max-width: 480px) {
-  .skills {
-    padding: 2rem 1rem;
-  }
-
   .skillContainer {
     grid-template-columns: 1fr;
     gap: 1rem;
@@ -110,9 +109,8 @@
 
   .skill {
     padding: 1.5rem;
-
-    align-items: center;
-    text-align: center;
+    justify-content: unset;
+    padding-left: 40%;
   }
   .skill:hover {
     transform: translateY(-3px);
@@ -122,8 +120,5 @@
   }
   .heading {
     font-size: 2rem;
-  }
-  .heading::after {
-    width: 7rem;
   }
 }

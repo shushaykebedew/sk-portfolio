@@ -2,7 +2,7 @@
 .hero {
   min-height: 100vh;
   background-color: #37517e;
-  padding: 3rem 10rem 3rem 5rem;
+  padding: 3rem 10rem;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -29,16 +29,17 @@
   column-gap: 5rem;
   align-items: center;
 }
-
 .heroText {
-  /* margin-top: 7rem; */
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
-
 .heroText h1 {
   font-size: 4.5rem;
   font-weight: 700;
   line-height: 56px;
   margin-bottom: 2rem;
+  align-self: flex-start;
 }
 
 .heroText p {
@@ -58,7 +59,7 @@
   background-color: #47b2e4;
   color: #ffffff;
   border-radius: 50px;
-  padding: 1rem 3rem;
+  padding: 1rem 2rem;
   border: none;
   font-size: 1.6rem;
   font-weight: 600;
@@ -82,6 +83,11 @@
   text-decoration: none;
 }
 
+.downloadIcon {
+  margin-left: 0.5rem;
+  font-size: 1.2rem;
+}
+
 .heroImg {
   display: flex;
   justify-content: center;
@@ -96,7 +102,6 @@
   box-shadow: 0px 10px 20px rgba(0, 0, 0, 0.3);
 }
 
-/* Navigation Styles */
 .heroNav {
   display: flex;
   justify-content: space-between;
@@ -121,7 +126,6 @@
   color: #47b2e4;
 }
 
-/* Hamburger Menu Styles */
 .menuToggle {
   display: none;
   background: none;
@@ -130,8 +134,6 @@
   color: #ffffff;
   cursor: pointer;
 }
-
-/* Responsive Styles */
 
 /* Large Screens (1080px and below) */
 @media (max-width: 1080px) {
@@ -149,6 +151,7 @@
 
   .heroText h1 {
     font-size: 4rem;
+    align-self: center;
   }
 
   .heroText p {
@@ -156,7 +159,6 @@
   }
 
   .ctaBtn {
-    padding: 0.8rem 2.5rem;
     font-size: 1.5rem;
   }
 
@@ -164,6 +166,7 @@
     display: flex;
     justify-content: center;
   }
+
   .heroImg img {
     height: 44rem;
   }
@@ -174,6 +177,7 @@
   .hero {
     padding: 2rem;
   }
+
   .heroContainer {
     grid-template-columns: 1fr;
     row-gap: 3rem;
@@ -192,8 +196,10 @@
   }
 
   .ctaBtn {
-    padding: 0.8rem 2rem;
+    padding: 1rem 2rem;
     font-size: 1.4rem;
+    width: fit-content;
+    margin: 0 auto;
   }
 
   .heroImg img {
@@ -202,6 +208,13 @@
 
   .menuToggle {
     display: block;
+    margin-top: 0;
+  }
+
+  .header {
+    flex-direction: row;
+    gap: 1rem;
+    margin-bottom: 2rem;
   }
 
   .heroNav {
@@ -266,35 +279,29 @@
     font-size: 1.6rem;
   }
 
-  .ctaBtn {
-    padding: 1rem 2.5rem;
-    font-size: 1.6rem;
-  }
-
   .heroImg img {
     max-width: 90%;
     height: auto;
     margin: 0 auto;
   }
 
-  .header {
-    flex-direction: column;
-    gap: 1rem;
-    text-align: center;
-  }
-
   .navLink {
     font-size: 1.8rem;
   }
+
   .fullName {
     font-size: 2rem;
-    align-self: flex-start;
-    margin-top: 3rem;
+    margin-top: 0;
   }
+
   .menuToggle {
-    align-self: flex-end;
-    /* align-items: start; */
     display: flex;
     margin-top: 0;
+  }
+
+  .header {
+    flex-direction: row;
+    gap: 1rem;
+    justify-content: space-between;
   }
 }
