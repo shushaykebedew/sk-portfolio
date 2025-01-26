@@ -1,5 +1,11 @@
 import styles from "./Footer.module.css";
-import { FaFacebook, FaLinkedin, FaTwitter, FaInstagram } from "react-icons/fa";
+import {
+  FaFacebook,
+  FaLinkedin,
+  FaTwitter,
+  FaInstagram,
+  FaGithub,
+} from "react-icons/fa";
 import { IoChevronForward } from "react-icons/io5";
 import { FaArrowUp } from "react-icons/fa"; // Icon for the scroll-to-top button
 import { useEffect, useState } from "react";
@@ -143,6 +149,11 @@ function Footer() {
             <li>
               <a href="https://instagram.com/tigray_technology" target="_blank">
                 <FaInstagram className={styles.icon} />
+              </a>
+            </li>
+            <li>
+              <a href="https://github.com/shushaykebedew" target="_blank">
+                <FaGithub className={styles.icon} />
               </a>
             </li>
           </ul>

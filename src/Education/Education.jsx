@@ -6,7 +6,7 @@ function Education() {
     {
       degree: "Bachelor's in Information Technology",
       institution: "University of Mekelle/MIT",
-      year: "2018 - Present",
+      year: "2018 - 2025",
       description:
         "Focused on full-stack development, networking, data structures, algorithms, and other IT-related fields.",
     },
