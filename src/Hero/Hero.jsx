@@ -1,7 +1,7 @@
 import React, { useState } from "react";
 import styles from "./Hero.module.css";
 import { FaDownload } from "react-icons/fa"; // Import the download icon
-import heroImg from "../assets/hero-img.png";
+import heroImg from "../assets/hero-img.jpg";
 
 function Hero() {
   const [activeLink, setActiveLink] = useState("Home");

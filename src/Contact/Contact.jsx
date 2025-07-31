@@ -84,7 +84,7 @@ function Contact() {
             <FaMapMarkerAlt className={styles.icon} />
             <div>
               <p className={styles.label}>Address</p>
-              <p>Mekelle, Tigray, Ethiopia</p>
+              <p>Addis Ababa, Ethiopia</p>
             </div>
           </div>
 
@@ -105,10 +105,10 @@ function Contact() {
           </div>
           <div className={styles.map}>
             <iframe
-              src="https://www.openstreetmap.org/export/embed.html?bbox=39.4672%2C13.4673%2C39.4753%2C13.4746&layer=mapnik"
-              allowFullScreen=""
-              loading="lazy"
-            />
+  src="https://www.openstreetmap.org/export/embed.html?bbox=38.7400%2C8.9600%2C38.7900%2C9.0200&layer=mapnik"
+  allowFullScreen=""
+  loading="lazy"
+/>
           </div>
         </div>
 

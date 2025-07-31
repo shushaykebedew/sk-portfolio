@@ -11,11 +11,11 @@ function Education() {
         "Focused on full-stack development, networking, data structures, algorithms, and other IT-related fields.",
     },
     {
-      degree: "High School Diploma",
-      institution: "Aba-Hailemariam High School",
-      year: "2014 - 2018",
+      degree: "Bachelor's in Business Management",
+      institution: "Ethio Lens College",
+      year: "2020 - 2025",
       description:
-        "Studied a comprehensive curriculum covering both social and natural sciences.",
+        "Explored core principles of business management, leadership, organizational behavior, economics, and strategic planning, combining theoretical and practical approaches.",
     },
   ];
 
