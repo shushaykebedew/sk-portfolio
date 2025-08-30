@@ -36,7 +36,7 @@ function Footer() {
         {/* Personal Info Section */}
         <div className={styles.personalInfo}>
           <h2>SHUSHAY</h2>
-          <p>Mekelle, Tigray, Ethiopia</p>
+          <p>Addis Ababa, Ethiopia</p>
           <p>
             <strong>Phone:</strong> +251 943 668 796
           </p>
@@ -147,7 +147,10 @@ function Footer() {
               </a>
             </li>
             <li>
-              <a href="https://instagram.com/tigray_technology" target="_blank">
+              <a
+                href="https://www.instagram.com/shushay_kebedew/"
+                target="_blank"
+              >
                 <FaInstagram className={styles.icon} />
               </a>
             </li>

@@ -1,14 +1,23 @@
-import React, { useState } from "react";
+import React, { useState, useEffect } from "react";
 import styles from "./Hero.module.css";
-import { FaDownload } from "react-icons/fa"; // Import the download icon
+import { FaDownload } from "react-icons/fa";
 import heroImg from "../assets/hero-img.jpg";
 
 function Hero() {
   const [activeLink, setActiveLink] = useState("Home");
   const [isMenuOpen, setIsMenuOpen] = useState(false);
+  const [isScrolled, setIsScrolled] = useState(false);
+
+  useEffect(() => {
+    const handleScroll = () => {
+      setIsScrolled(window.scrollY > 50); // Add shadow after 50px scroll
+    };
+
+    window.addEventListener("scroll", handleScroll);
+    return () => window.removeEventListener("scroll", handleScroll);
+  }, []);
 
   const navLinks = [
-    "Home",
     "About",
     "Services",
     "Skills",
@@ -23,9 +32,14 @@ function Hero() {
   };
 
   return (
-    <section className={styles.hero}>
-      <header className={styles.header}>
-        <h2 className={styles.fullName}>Shushay Kebedew</h2>
+    <section id="home" className={styles.hero}>
+      {/* Header/Navbar */}
+      <header
+        className={`${styles.header} ${isScrolled ? styles.scrolled : ""}`}
+      >
+        <h2 className={styles.fullName}>
+          <a href="#home">Shushay Kebedew</a>
+        </h2>
 
         {/* Hamburger Icon */}
         <button
@@ -60,6 +74,7 @@ function Hero() {
         </nav>
       </header>
 
+      {/* Hero Section */}
       <main className={styles.heroContainer}>
         <div className={styles.heroText}>
           <h1>Full Stack Developer</h1>
@@ -69,7 +84,7 @@ function Hero() {
             efficient, and user-friendly web applications.
           </p>
           <button className={styles.ctaBtn}>
-            <a href="/Shushay-Kebedew-CV.pdf" download="Shushay_Kebedew_CV">
+            <a href="/SHUSHAY_KEBEDEW_CV.pdf" download="Shushay_Kebedew_CV">
               Download CV <FaDownload className={styles.downloadIcon} />
             </a>
           </button>

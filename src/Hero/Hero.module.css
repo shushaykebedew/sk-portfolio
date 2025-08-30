@@ -1,18 +1,36 @@
+/* Enable smooth scrolling for all anchor links */
+html {
+  scroll-behavior: smooth;
+}
+
 /* Default Styles (Desktop) */
 .hero {
   min-height: 100vh;
-  background-color: #37517e;
-  padding: 3rem 10rem;
+  /* background-color: #37517e; */
+  background-color: #f4f4f9;
+  padding: 8rem 10rem 3rem; /* Added top padding to avoid overlap with fixed navbar */
   display: flex;
   flex-direction: column;
   justify-content: center;
 }
 
+/* Navbar */
 .header {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  position: relative;
+  position: fixed; /* Fixed navbar */
+  top: 0;
+  left: 0;
+  width: 100%;
+  z-index: 1000;
+  background-color: #37517e;
+  padding: 1rem 5rem;
+  transition: box-shadow 0.3s ease, background-color 0.3s ease;
+}
+
+.header.scrolled {
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.25); /* Shadow when scrolled */
 }
 
 .fullName {
@@ -20,7 +38,18 @@
   font-weight: 500;
   letter-spacing: 1px;
   text-transform: uppercase;
+}
+
+/* Make name a clickable link */
+.fullName a {
   color: #ffffff;
+  text-decoration: none;
+  cursor: pointer;
+  transition: color 0.3s ease;
+}
+
+.fullName a:hover {
+  color: #47b2e4;
 }
 
 .heroContainer {
@@ -29,6 +58,7 @@
   column-gap: 5rem;
   align-items: center;
 }
+
 .heroText {
   display: flex;
   flex-direction: column;
@@ -40,18 +70,20 @@
   line-height: 56px;
   margin-bottom: 2rem;
   align-self: flex-start;
+  color: #37517e;
 }
 
 .heroText p {
   font-size: 2.2rem;
   line-height: 1.3;
   font-weight: 600;
-  color: #cdcdcd;
+  /* color: #cdcdcd; */
+  color: #37517e;
   margin-bottom: 2rem;
 }
 
 .myName {
-  color: #fffffff3;
+  color: purple;
   font-style: italic;
 }
 
@@ -102,6 +134,7 @@
   box-shadow: 0px 10px 20px rgba(0, 0, 0, 0.3);
 }
 
+/* Navigation */
 .heroNav {
   display: flex;
   justify-content: space-between;
@@ -141,7 +174,7 @@
     font-size: 2.6rem;
   }
   .hero {
-    padding: 3rem 5rem;
+    padding: 8rem 5rem 3rem;
   }
 
   .heroText {
@@ -162,11 +195,6 @@
     font-size: 1.5rem;
   }
 
-  .heroImg {
-    display: flex;
-    justify-content: center;
-  }
-
   .heroImg img {
     height: 44rem;
   }
@@ -175,7 +203,7 @@
 /* Tablet (840px and Below) */
 @media (max-width: 840px) {
   .hero {
-    padding: 2rem;
+    padding: 8rem 2rem 3rem;
   }
 
   .heroContainer {
@@ -208,7 +236,6 @@
 
   .menuToggle {
     display: block;
-    margin-top: 0;
   }
 
   .header {
@@ -241,27 +268,12 @@
     gap: 2rem;
     padding: 1rem 0;
   }
-
-  .menuOverlay {
-    display: none;
-  }
-
-  .menuOverlay.active {
-    display: block;
-    position: fixed;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    background: rgba(0, 0, 0, 0.5);
-    z-index: 9;
-  }
 }
 
 /* Mobile (480px and Below) */
 @media (max-width: 480px) {
   .hero {
-    padding: 2rem 1rem;
+    padding: 8rem 1rem 3rem;
   }
 
   .heroContainer {
@@ -291,12 +303,10 @@
 
   .fullName {
     font-size: 2rem;
-    margin-top: 0;
   }
 
   .menuToggle {
     display: flex;
-    margin-top: 0;
   }
 
   .header {
